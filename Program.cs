@@ -16,7 +16,7 @@ valorParcela = valor / qtdParcelas;
 ParcelasPermidas = rendaComprovada / 100 * 30;
 
 Console.WriteLine($"Parcela: {valorParcela:C2}");
-Console.WriteLine($"Parcelas permitidas: {ParcelasPermidas:C2}");
+Console.WriteLine($"Maior Parcela permitidas: {ParcelasPermidas:C2}");
 
 if(valorParcela > ParcelasPermidas){
     Console.ForegroundColor = ConsoleColor.Red;
