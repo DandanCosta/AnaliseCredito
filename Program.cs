@@ -1,4 +1,4 @@
-﻿decimal valor,valorParcela, rendaComprovada, ParcelasPermidas;
+﻿decimal valor,valorParcela, rendaComprovada, ParcelaPermitida;
 int qtdParcelas;
 
 Console.WriteLine("--- Anilise de Credito ---\n");
@@ -13,20 +13,18 @@ Console.Write("Digite a renda mensal comprovada: ");
 rendaComprovada = decimal.Parse(Console.ReadLine()!);
 
 valorParcela = valor / qtdParcelas;
-ParcelasPermidas = rendaComprovada / 100 * 30;
+ParcelaPermitida = rendaComprovada / 100 * 30;
 
 Console.WriteLine($"Parcela: {valorParcela:C2}");
-Console.WriteLine($"Maior Parcela permitidas: {ParcelasPermidas:C2}");
+Console.WriteLine($"Maior Parcela permitida: {ParcelaPermitida:C2}");
 
-if(valorParcela > ParcelasPermidas){
+if(valorParcela > ParcelaPermitida){
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Emprestimo não autorizado");
 }
 else{
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("Emprestimo autorizado");
-
-
 }
 
 Console.ResetColor();
