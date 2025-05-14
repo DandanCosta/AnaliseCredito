@@ -1,12 +1,12 @@
 ﻿decimal valor,valorParcela, rendaComprovada, ParcelaPermitida;
 int qtdParcelas;
 
-Console.WriteLine("--- Anilise de Credito ---\n");
+Console.WriteLine("--- Analise de Credito ---\n");
 
 Console.Write("Digite o valor do emprestimo: ");
 valor = decimal.Parse(Console.ReadLine()!);
 
-Console.Write("Digite a quatidade de parcelas: ");
+Console.Write("Digite a quantidade de parcelas: ");
 qtdParcelas = int.Parse(Console.ReadLine()!);
 
 Console.Write("Digite a renda mensal comprovada: ");
